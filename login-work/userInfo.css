@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.list {
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.container {
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+}
+.left {
+    z-index: 1;
+    width: 35%;
+    height: 100%;
+    background-color: rgb(221, 224, 224);
+    position: absolute;
+    left: 0;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    width: 12em;
+    height: 12em;
+    background-color: pink;
+    margin: 50px auto 0;
+    border-radius: 50%;
+}
+
+.userinfo, .contact, .hobby{
+    /* margin-top: 20px; */
+    padding: 20px;
+}
+.userinfo p {
+    word-wrap: break-word;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 6px solid skyblue;
+}
+
+
+.right {
+    z-index: 2;
+    width: 65%;
+    height: 100%;
+    background-color: rgb(221, 224, 224);
+    position: absolute;
+    right: 0;
+}
+.right-main {
+    padding: 0 40px;
+    height: 98%;
+    margin-top: 2%;
+    background-color: #fff;
+    border-top-left-radius: 50px;
+}
+
+.right-main .name {
+    width: 100%;
+    height: 150px;
+    /* background-color: pink; */
+    position: relative;
+}
+
+.right-main .education {
+    padding-top: 10px;
+}
