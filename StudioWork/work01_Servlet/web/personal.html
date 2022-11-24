@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>个人中心</title>
+</head>
+<body>
+
+<h1>personal center</h1>
+<form action="http://localhost:8080/edit" method="post">
+  用户名：<input type="text" th:value="${session.user.username}" name="username" readonly="readonly">
+  密码：<input type="text" th:value="${session.user.password}" name="password">
+  昵称：<input type="text" th:value="${session.user.nickname}" name="nickname">
+  <input type="submit" value="修改">
+</form>
+
+
+</body>
+</html>
